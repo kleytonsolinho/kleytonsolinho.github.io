@@ -1,5 +1,3 @@
-// import { useState } from 'react';
-
 import { FaBars, FaFilePdf } from 'react-icons/fa';
 import {
   Nav,
@@ -16,16 +14,6 @@ import {
 import imgLogo from '../../assets/logo.png';
 
 export default function Navbar({ toggle }) {
-  /* const [navbar, setNavbar] = useState(true); */
-
-  const scrollingBody = () => {
-    if (window.screenY >= 200) {
-      console.log(window.scrollY);
-    }
-  };
-
-  window.addEventListener('scroll', scrollingBody);
-
   return (
     <>
       <Nav>
