@@ -1,4 +1,16 @@
-import { FaGithub, FaCode, FaYoutube } from 'react-icons/fa';
+import {
+  FaGithub,
+  FaCode,
+  FaYoutube,
+} from 'react-icons/fa';
+
+import {
+  SiReact,
+  SiTypescript,
+  SiStyledComponents,
+  SiNodeDotJs,
+} from 'react-icons/si';
+
 import { Container, Button } from './styles';
 
 import dataWork from '../../data/DataWork';
@@ -42,19 +54,19 @@ export default function Work() {
               <h2>Tecnologias:</h2>
               <div className="tecnology">
                 <div>
-                  <FaGithub />
+                  <SiReact className="tec-icon" />
                   <span>React JS</span>
                 </div>
                 <div>
-                  <FaGithub />
+                  <SiTypescript className="tec-icon" />
                   <span>TypeScript</span>
                 </div>
                 <div>
-                  <FaGithub />
+                  <SiStyledComponents className="tec-icon" />
                   <span>Styled Components</span>
                 </div>
                 <div>
-                  <FaGithub />
+                  <SiNodeDotJs className="tec-icon" />
                   <span>Node JS</span>
                 </div>
               </div>

@@ -68,7 +68,6 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .stroke {
-      cursor: pointer;
       background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
       background-size: 100% 100%;
       background-clip: text;
@@ -84,7 +83,6 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     .stroke-invert {
-      cursor: pointer;
       background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
       background-size: 200% 200%;
       background-clip: text;

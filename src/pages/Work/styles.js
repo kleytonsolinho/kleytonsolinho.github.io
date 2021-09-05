@@ -16,6 +16,10 @@ export const Container = styled.section`
       width: 40%;
       height: 100vh;
       color: var(--text-first);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
 
       h3 {
         font-size: 2.5rem;
@@ -70,13 +74,21 @@ export const Container = styled.section`
         div {
           width: 25%;
           height: 100%;
-          border: 1px solid #333;
+          //border: 1px solid #333;
           display: flex;
           align-items: center;
           justify-content: center;
           text-align: center;
           flex-direction: column;
 
+        }
+
+        .tec-icon {
+          font-size: 3rem;
+        }
+
+        span {
+          padding-top: 10px;
         }
       }
     }
