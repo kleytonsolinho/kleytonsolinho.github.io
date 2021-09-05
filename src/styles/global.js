@@ -12,7 +12,24 @@ export const GlobalStyles = createGlobalStyle`
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    scrollbar-width: thin;
+    scrollbar-color: var(--green);
   }
+
+*::-webkit-scrollbar {
+  width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--green);
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--background);
+  border-radius: 20px;
+  border: 3px solid orange;
+}
 
   html {
     @media (max-width: 1080px) {

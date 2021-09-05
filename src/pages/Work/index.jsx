@@ -40,7 +40,6 @@ export default function Work() {
                 </a>
               </div>
             </div>
-            <h4>{data.category}</h4>
           </div>
           <div className="banner">
             { data.mobile
