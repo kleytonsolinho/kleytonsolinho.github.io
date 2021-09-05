@@ -8,7 +8,7 @@ export default function Contact() {
       <div className="content">
         <h3>Need a developer?</h3>
         <a href="mailto:kleytonsolinho@gmail.com">
-          <h1 className="stroke">Lets work together!</h1>
+          <h1 className="stroke">&gt; Lets work together!</h1>
         </a>
         <img src={imgContact} alt="" />
       </div>

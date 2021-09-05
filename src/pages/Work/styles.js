@@ -14,6 +14,10 @@ export const Container = styled.section`
     flex-direction: row;
   }
 
+  .margin-r {
+    margin-right: 50px;
+  }
+
   section {
     width: 100%;
     height: 100%;
