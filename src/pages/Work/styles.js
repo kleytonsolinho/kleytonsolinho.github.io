@@ -35,6 +35,7 @@ export const Container = styled.section`
         h1 {
           font-size: 4.5rem;
           text-align: left;
+          background-size: auto auto;
         }
 
         h2 {
@@ -63,15 +64,16 @@ export const Container = styled.section`
 
       }
 
-      h4 {
-        font-size: 1.5rem;
-        font-weight: bold;
-        position: relative;
-        bottom: 0;
-        left: 0;
+      .tecnology {
         width: 100%;
         height: 100px;
-        line-height: 100px;
+        background: beige;
+
+        div {
+          width: 25%;
+          height: 100%;
+          border: 1px solid #333;
+        }
       }
     }
 

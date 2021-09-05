@@ -13,7 +13,7 @@ export default function Work() {
           <div className="container" defaultValue={id}>
             <h3>{data.number}</h3>
             <div className="content">
-              <h1>{data.title}</h1>
+              <h1 className="stroke-invert">{data.title}</h1>
               <h2>{data.tecnology}</h2>
               <p>{data.description}</p>
               <div>
@@ -38,6 +38,13 @@ export default function Work() {
                       </Button>
                     )}
                 </a>
+              </div>
+              <h2>Tecnologias:</h2>
+              <div className="tecnology">
+                <div />
+                <div />
+                <div />
+                <div />
               </div>
             </div>
           </div>

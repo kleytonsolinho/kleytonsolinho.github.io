@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.footer`
-  width: 100%auto;
+  width: calc(100% - 160px);
   max-width: 1268px;
   height: 100px;
   margin: 0 auto;

@@ -43,8 +43,12 @@ export const Container = styled.section`
     overflow: hidden;
     z-index: -1;
 
+    p {
+      background-size: 100% 100%;
+    }
+
     span {
-      //margin-left: 110px;
+      background-size: auto auto;
     }
   }
 
