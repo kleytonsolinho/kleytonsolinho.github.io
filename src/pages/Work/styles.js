@@ -88,11 +88,7 @@ export const Container = styled.section`
       align-items: center;
       justify-content: center;
 
-      .web {
-        width: 95%;
-      }
-
-      .app {
+      img {
         height: 95%;
       }
     }

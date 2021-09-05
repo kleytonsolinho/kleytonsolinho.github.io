@@ -3,7 +3,7 @@ import { Container, Button } from './styles';
 
 import dataWork from '../../data/DataWork';
 import imgApp from '../../assets/iphone.png';
-import imgWeb from '../../assets/ipad-pro.png';
+import imgWeb from '../../assets/ipad-pro-v.png';
 
 export default function Work() {
   return (

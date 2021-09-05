@@ -56,7 +56,7 @@ export const Container = styled.section`
     height: 100%;
     float: right;
     padding: 0 25px;
-    //display: flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: row;
