@@ -23,7 +23,7 @@ export const Container = styled.section`
     }
 
     h2 {
-      writing-mode: tb-rl;
+      writing-mode: vertical-rl;
       transform: rotate(180deg);
       white-space: nowrap;
       font-size: 8rem;

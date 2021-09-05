@@ -21,7 +21,7 @@ export default function Work() {
   return (
     <Container>
       { dataWork.map((data, { id }) => (
-        <section key={id}>
+        <section key={id} className={data.number % 2 === 0 ? 'right' : 'left'}>
           <div className="container" defaultValue={id}>
             <h3>{data.number}</h3>
             <div className="content">

@@ -44,7 +44,7 @@ export const Container = styled.section`
     z-index: -1;
 
     p {
-      background-size: 100% 100%;
+      background-size: 50% 50%;
     }
 
     span {

@@ -6,6 +6,14 @@ export const Container = styled.section`
   height: 100%;
   margin: 0 auto;
 
+  .right {
+    flex-direction: row-reverse;
+  }
+
+  .left {
+    flex-direction: row;
+  }
+
   section {
     width: 100%;
     height: 100%;
@@ -33,7 +41,7 @@ export const Container = styled.section`
 
       .content {
         width: 100%;
-        height: calc(100% - 200px);
+        height: 500px;
 
         h1 {
           font-size: 4.5rem;
@@ -74,13 +82,11 @@ export const Container = styled.section`
         div {
           width: 25%;
           height: 100%;
-          //border: 1px solid #333;
           display: flex;
           align-items: center;
           justify-content: center;
           text-align: center;
           flex-direction: column;
-
         }
 
         .tec-icon {
