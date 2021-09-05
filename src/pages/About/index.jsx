@@ -8,7 +8,7 @@ export default function About() {
       <div className="perfil">
         <h2 className="stroke">startup</h2>
         <img src={imgPerfil} alt="" />
-        <h3 className="stroke">fintech</h3>
+        <h3 className="stroke">[...fintech, next]</h3>
       </div>
       <div className="content">
         <h1 className="stroke-invert">Hi, I am Kleyton!</h1>

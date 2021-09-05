@@ -19,7 +19,7 @@ export default function Home() {
         <div id="box1" />
         <div id="box2" className="text">
           <p className="stroke-invert">Mobile &amp;</p>
-          <p className="stroke-invert">Frontend</p>
+          <p className="stroke">Frontend</p>
           <span className="stroke-invert">Developer</span>
         </div>
         <div id="box3" className="text wrapper">

@@ -1,10 +1,9 @@
 import styled from 'styled-components';
 
 export const Container = styled.section`
-  width: 100%;
+  width: calc(100% - 160px);
   max-width: 1268px;
   height: 100%;
-  padding: 0 80px;
   margin: 0 auto;
 
   section {
@@ -67,12 +66,17 @@ export const Container = styled.section`
       .tecnology {
         width: 100%;
         height: 100px;
-        background: beige;
 
         div {
           width: 25%;
           height: 100%;
           border: 1px solid #333;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          text-align: center;
+          flex-direction: column;
+
         }
       }
     }
@@ -84,15 +88,19 @@ export const Container = styled.section`
       align-items: center;
       justify-content: center;
 
-      img {
+      .web {
         width: 95%;
+      }
+
+      .app {
+        height: 95%;
       }
     }
   }
 `;
 
 export const Button = styled.a`
-  width: 150px;
+  width: 175px;
   height: 45px;
   color: var(--green);
   background-color: transparent;

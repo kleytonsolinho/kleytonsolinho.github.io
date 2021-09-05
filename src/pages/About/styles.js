@@ -43,7 +43,7 @@ export const Container = styled.section`
       right: 0;
       text-align: center;
       opacity: 0.5;
-      font-size: 6rem;
+      font-size: 4rem;
 
       &:hover {
         opacity: 1;
