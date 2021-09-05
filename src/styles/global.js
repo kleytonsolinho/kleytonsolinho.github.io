@@ -43,6 +43,8 @@ export const GlobalStyles = createGlobalStyle`
     background: var(--background);
     -webkit-font-smoothing: antialiased;
     scrollbar-color: #50fa7b var(--background);
+
+    overflow-x: hidden;
   }
 
   body, input, textarea, button {

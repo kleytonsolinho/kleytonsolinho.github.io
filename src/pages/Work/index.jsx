@@ -63,10 +63,7 @@ export default function Work() {
           <div className="banner">
             { data.mobile
               ? (
-                <div className="app">
-                  <img src={imgApp} alt="" className="app" />
-                  <img src={imgApp} alt="" className="app" />
-                </div>
+                <img src={imgApp} alt="" className="app" />
               )
               : (
                 <img src={imgWeb} alt="" className="web" />
