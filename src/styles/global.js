@@ -18,17 +18,17 @@ export const GlobalStyles = createGlobalStyle`
   }
 
 *::-webkit-scrollbar {
-  width: 12px;
+  width: 10px;
 }
 
 *::-webkit-scrollbar-track {
-  background: var(--green);
+  background: var(--background);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: var(--background);
+  background-color: var(--green);
   border-radius: 20px;
-  border: 3px solid orange;
+  border: 1px solid #ddd;
 }
 
   html {

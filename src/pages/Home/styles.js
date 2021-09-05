@@ -37,8 +37,8 @@ export const Container = styled.section`
     font-size: 6rem;
     font-weight: 600;
     line-height: 100%;
-    position: absolute;
-    top: 200px;
+    position: relative;
+    top: 20%;
     left: 100px;
     overflow: hidden;
     z-index: -1;
@@ -56,8 +56,8 @@ export const Container = styled.section`
     font-size: 2rem;
     font-weight: 400;
     line-height: 100%;
-    position: absolute;
-    top: 450px;
+    position: relative;
+    top: 30%;
     left: 100px;
     overflow: hidden;
     z-index: -1;
