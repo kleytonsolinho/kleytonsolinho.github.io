@@ -18,7 +18,7 @@ export const GlobalStyles = createGlobalStyle`
   }
 
 *::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
 
 *::-webkit-scrollbar-track {
@@ -28,7 +28,6 @@ export const GlobalStyles = createGlobalStyle`
 *::-webkit-scrollbar-thumb {
   background-color: var(--green);
   border-radius: 20px;
-  border: 1px solid #ddd;
 }
 
   html {

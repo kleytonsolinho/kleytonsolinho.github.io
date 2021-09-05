@@ -38,13 +38,13 @@ export const Container = styled.section`
     font-weight: 600;
     line-height: 100%;
     position: relative;
-    top: 20%;
+    top: 15%;
     left: 100px;
     overflow: hidden;
     z-index: -1;
 
     span {
-      margin-left: 110px;
+      //margin-left: 110px;
     }
   }
 
