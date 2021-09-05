@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.section`
   width: calc(100% - 160px);
+  max-width: 1268px;
   height: 100vh;
+  max-height: 800px;
   margin: 0 auto;
 
   .perfil {

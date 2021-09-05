@@ -1,20 +1,17 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  width: 100vw;
+export const Container = styled.section`
+  width: 100%;
+  max-width: 1268px;
   height: 100%;
   padding: 0 80px;
   margin: 0 auto;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
 
   section {
     width: 100%;
     height: 100%;
     max-height: 100vh;
     display: flex;
-    scroll-snap-align: start;
-    overflow: hidden;
 
     .container {
       width: 40%;

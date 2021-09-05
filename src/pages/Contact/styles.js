@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  width: calc(100% - 160px);
+export const Container = styled.section`
+  width: 100%;
+  max-width: 1268px;
   height: calc(100vh - 100px);
   margin: 0 auto;
   display: flex;

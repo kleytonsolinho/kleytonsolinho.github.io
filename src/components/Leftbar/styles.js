@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.aside`
   position: fixed;
   bottom: 0;
   right: -120px;

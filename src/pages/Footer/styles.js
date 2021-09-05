@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
-  width: calc(100% - 160px);
+export const Container = styled.footer`
+  width: 100%auto;
+  max-width: 1268px;
   height: 100px;
   margin: 0 auto;
   display: flex;

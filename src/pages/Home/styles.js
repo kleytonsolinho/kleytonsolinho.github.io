@@ -3,8 +3,9 @@ import styled from 'styled-components';
 import imgBanner1 from '../../assets/banner-1.png';
 import imgBanner2 from '../../assets/banner-2.png';
 
-export const Container = styled.main`
+export const Container = styled.section`
   width: calc(100% - 160px);
+  max-width: 1268px;
   height: calc(100vh - 100px);
   margin: 0 auto;
   margin-top: 100px;
