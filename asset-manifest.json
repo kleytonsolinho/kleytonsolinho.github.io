@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/static/js/main.5371e9b1.chunk.js",
-    "main.js.map": "/static/js/main.5371e9b1.chunk.js.map",
+    "main.js": "/static/js/main.b0f13bc6.chunk.js",
+    "main.js.map": "/static/js/main.b0f13bc6.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.4eab1d6a.js",
     "runtime-main.js.map": "/static/js/runtime-main.4eab1d6a.js.map",
     "static/js/2.1fbbaf4e.chunk.js": "/static/js/2.1fbbaf4e.chunk.js",
@@ -11,14 +11,14 @@
     "static/media/banner-1.9bd1d733.png": "/static/media/banner-1.9bd1d733.png",
     "static/media/banner-2.dbd64ee8.png": "/static/media/banner-2.dbd64ee8.png",
     "static/media/contact-pic.e3995bee.png": "/static/media/contact-pic.e3995bee.png",
-    "static/media/iphone-mockup.ca69bbee.png": "/static/media/iphone-mockup.ca69bbee.png",
+    "static/media/ipad-pro.e42be19e.png": "/static/media/ipad-pro.e42be19e.png",
+    "static/media/iphone.5182c2bc.png": "/static/media/iphone.5182c2bc.png",
     "static/media/logo.89bfda4f.png": "/static/media/logo.89bfda4f.png",
-    "static/media/mac-mockup.d9327575.png": "/static/media/mac-mockup.d9327575.png",
     "static/media/profile-pic.7b7107e9.png": "/static/media/profile-pic.7b7107e9.png"
   },
   "entrypoints": [
     "static/js/runtime-main.4eab1d6a.js",
     "static/js/2.1fbbaf4e.chunk.js",
-    "static/js/main.5371e9b1.chunk.js"
+    "static/js/main.b0f13bc6.chunk.js"
   ]
 }
