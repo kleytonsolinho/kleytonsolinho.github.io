@@ -12,7 +12,7 @@ export default function About() {
       </div>
       <div className="content">
         <article>
-          <h1 className="stroke-invert">Hi, I am Kleyton!</h1>
+          <h1 className="stroke-invert">Hi, I&apos;m Kleyton!</h1>
           <p>
             Comecei a programar em 2008 com Visual Basic na época desenvolvendo
             softwares de Gestão Empresarial e NFe 2.0, ao longo do tempo fui

@@ -34,13 +34,16 @@ export const Container = styled.section`
       flex-direction: column;
 
       h3 {
-        font-size: 2.5rem;
+        font-size: 15rem;
         position: relative;
         top: 0;
         left: 0;
         width: 100%;
         height: 100px;
         line-height: 100px;
+        z-index: -1;
+        color: var(--text-second);
+        opacity: 0.05;
       }
 
       .content {
