@@ -16,6 +16,7 @@ export const Container = styled.section`
 
   .margin-r {
     margin-right: 50px;
+    width: 100%;
   }
 
   section {
