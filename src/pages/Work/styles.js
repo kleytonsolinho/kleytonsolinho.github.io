@@ -114,8 +114,12 @@ export const Container = styled.section`
       align-items: center;
       justify-content: center;
 
-      img {
+      .img-h {
         height: 95%;
+      }
+
+      .img-w {
+        width: 95%;
       }
     }
   }
