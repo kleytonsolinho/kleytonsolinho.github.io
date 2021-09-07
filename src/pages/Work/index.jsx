@@ -15,7 +15,8 @@ import { Container, Button } from './styles';
 
 import dataWork from '../../data/DataWork';
 import imgApp from '../../assets/iphone.png';
-import imgWeb from '../../assets/ipad-pro-iphone.png';
+import imgWeb from '../../assets/ipad-pro-h.png';
+import imgFull from '../../assets/ipad-pro-iphone.png';
 
 export default function Work() {
   return (
@@ -36,7 +37,7 @@ export default function Work() {
                   </Button>
                 </a>
                 <a href={data.demo} target="_blank" rel="noreferrer">
-                  { data.mobile
+                  { data.model === 1
                     ? (
                       <Button>
                         <FaYoutube className="icon" />
@@ -73,13 +74,15 @@ export default function Work() {
             </div>
           </div>
           <div className="banner">
-            { data.mobile
-              ? (
-                <img src={imgApp} alt="" className="img-h" />
-              )
-              : (
-                <img src={imgWeb} alt="" className="margin-r img-w" />
-              )}
+            { data.model === 1 && (
+              <img src={imgApp} alt="" className="img-h" />
+            )}
+            { data.model === 2 && (
+              <img src={imgWeb} alt="" className="img-w" />
+            )}
+            { data.model === 3 && (
+              <img src={imgFull} alt="" className="img-w" />
+            )}
           </div>
         </section>
       ))}
