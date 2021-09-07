@@ -2,7 +2,7 @@ const data = [
   {
     id: 1,
     number: '01',
-    model: 1,
+    model: 0,
     title: 'Mobile App',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptas totam.',
     category: 'React Native App',
@@ -13,7 +13,7 @@ const data = [
   {
     id: 2,
     number: '02',
-    model: 2,
+    model: 1,
     title: 'Web App',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptas totam.',
     category: 'React JS Web App',
@@ -24,7 +24,7 @@ const data = [
   {
     id: 3,
     number: '03',
-    model: 3,
+    model: 2,
     title: 'Web/Mobile',
     description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum voluptas totam.',
     category: 'React JS + React Native App',

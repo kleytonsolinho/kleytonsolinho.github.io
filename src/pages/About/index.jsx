@@ -8,7 +8,7 @@ export default function About() {
       <div className="perfil">
         <h2 className="stroke">startup</h2>
         <img src={imgPerfil} alt="" />
-        <h3 className="stroke">[...fintech, next]</h3>
+        <h3 className="stroke">[...fintech, growth]</h3>
       </div>
       <div className="content">
         <article>
@@ -17,12 +17,10 @@ export default function About() {
             Comecei a programar em 2008 com Visual Basic na época desenvolvendo
             softwares de Gestão Empresarial e NFe 2.0, ao longo do tempo fui
             migrando para Tecnologias da Web como HTML5, CSS3, JavaScript e PHP
-            com o crescente número de SaaS.
-          </p>
-          <p>
-            Hoje estudo e me especializo nas Tecnologias de Frontend como React JS/NEXT JS,
-            React Native e Node JS (Backend), pois no futuro pretendo me
-            tornar um desenvolvedor fullstack.
+            com o crescente número de SaaS hoje estudo e me especializo nas
+            Tecnologias de Frontend como React JS/NEXT JS, React Native e
+            Node JS (Backend), pois no futuro pretendo me tornar um desenvolvedor
+            fullstack.
           </p>
           <p>
             Me formando bacharel em Sistemas de Informação em 2022, também

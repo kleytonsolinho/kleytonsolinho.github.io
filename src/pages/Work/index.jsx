@@ -19,6 +19,12 @@ import imgWeb from '../../assets/ipad-pro-h.png';
 import imgFull from '../../assets/ipad-pro-iphone.png';
 
 export default function Work() {
+  const switchImg = [
+    <img src={imgApp} alt="" className="img-h" />,
+    <img src={imgWeb} alt="" className="img-w" />,
+    <img src={imgFull} alt="" className="img-w" />,
+  ];
+
   return (
     <Container>
       { dataWork.map((data, { id }) => (
@@ -74,15 +80,7 @@ export default function Work() {
             </div>
           </div>
           <div className="banner">
-            { data.model === 1 && (
-              <img src={imgApp} alt="" className="img-h" />
-            )}
-            { data.model === 2 && (
-              <img src={imgWeb} alt="" className="img-w" />
-            )}
-            { data.model === 3 && (
-              <img src={imgFull} alt="" className="img-w" />
-            )}
+            {switchImg[data.model]}
           </div>
         </section>
       ))}

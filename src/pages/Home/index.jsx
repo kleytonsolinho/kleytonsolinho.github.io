@@ -4,6 +4,7 @@ import Leftbar from '../../components/Leftbar';
 
 import About from '../About';
 import Work from '../Work';
+import Experience from '../Experience';
 import Contact from '../Contact';
 import Footer from '../Footer';
 
@@ -35,6 +36,7 @@ export default function Home() {
       </Container>
       <About />
       <Work />
+      <Experience />
       <Contact />
       <Footer />
     </>
