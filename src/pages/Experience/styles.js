@@ -18,7 +18,7 @@ export const Container = styled.section`
 
 export const Top = styled.div`
   width: 100%;
-  height: 50px;
+  height: 25px;
   display: absolute;
   top: 0;
   left: 0;
@@ -30,7 +30,7 @@ export const Top = styled.div`
 
 export const Bottom = styled.div`
   width: 100%;
-  height: 50px;
+  height: 25px;
   display: relative;
   bottom: 0;
   left: 0;
@@ -44,7 +44,7 @@ export const Bottom = styled.div`
 export const Content = styled.div`
   width: 100%;
   max-width: 1268px;
-  height: calc(100% - 100px);
+  height: calc(100% - 50px);
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -65,13 +65,13 @@ export const Content = styled.div`
     width: 80%;
     height: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     gap: 25px 25px;
     grid-auto-flow: row;
     grid-template-areas:
-      ". . . ."
-      ". . . .";
+      ". . ."
+      ". . .";
     color: var(--text-first);
 
     div {
@@ -82,7 +82,10 @@ export const Content = styled.div`
       align-items: center;
       justify-content: center;
       border-radius: 10px;
+      border: 1px solid rgba(10, 25, 47, 0.2);
       font-size: 3rem;
+      -webkit-box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.5);
+      box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.5);
 
       &:hover {
         transform: translateY(-2px);

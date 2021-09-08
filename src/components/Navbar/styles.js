@@ -58,6 +58,10 @@ export const NavLogo = styled.a`
     width: 100%;
     height: 120px;
     cursor: pointer;
+
+    &:hover {
+      top: -2px;
+    }
   }
 `;
 
