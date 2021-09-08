@@ -1,6 +1,10 @@
+import { FaRegFolderOpen, FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+
 import {
   Container, Top, Bottom, Content,
 } from './styles';
+
+import dataExperience from '../../data/DataExperience';
 
 export default function Experience() {
   return (
@@ -11,12 +15,30 @@ export default function Experience() {
           <h3>Experience &amp; Case Study</h3>
         </div>
         <div className="container">
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
+          { dataExperience.map((data, { id }) => (
+            <div key={id}>
+              <header>
+                <FaRegFolderOpen />
+                <section>
+                  <a href="/">
+                    <FaGithub />
+                  </a>
+                  <a href="/">
+                    <FaExternalLinkAlt />
+                  </a>
+                </section>
+              </header>
+              <h4>{data.title}</h4>
+              <p>{data.description}</p>
+              <footer>
+                <ul>
+                  {data.tecnology.map((tecs) => (
+                    <li>{tecs}</li>
+                  ))}
+                </ul>
+              </footer>
+            </div>
+          ))}
         </div>
       </Content>
       <Bottom />

@@ -77,19 +77,66 @@ export const Content = styled.div`
     div {
       background: rgba(10, 25, 47, 0.5);
       backdrop-filter: blur(10px);
-      padding: 2rem 1.75rem;
+      padding: 1.75rem;
       display: flex;
-      align-items: center;
-      justify-content: center;
+      flex-direction: column;
       border-radius: 10px;
       border: 1px solid rgba(10, 25, 47, 0.2);
-      font-size: 3rem;
       -webkit-box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.5);
       box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.5);
 
       &:hover {
         transform: translateY(-2px);
-        cursor: pointer;
+      }
+
+      header {
+        //background: aquamarine;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        color: var(--green);
+        font-size: 3rem;
+        height: 30%;
+
+        section {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          font-size: 1.5rem;
+
+          a {
+            text-decoration: none;
+            color: var(--green);
+          }
+        }
+      }
+
+      h4 {
+        //background: purple;
+        font-size: 1.2rem;
+        height: 20%;
+      }
+
+      p {
+        //background: coral;
+        font-size: 1rem;
+        color: var(--text-second);
+        height: 40%;
+      }
+
+      footer {
+        height: 10%;
+        ul {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+
+        li {
+          list-style: none;
+          font-size: 0.8rem;
+          color: var(--text-second);
+        }
       }
     }
   }
