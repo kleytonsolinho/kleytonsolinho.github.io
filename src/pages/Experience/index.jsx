@@ -20,10 +20,10 @@ export default function Experience() {
               <header>
                 <FaRegFolderOpen />
                 <section>
-                  <a href="/">
+                  <a href={data.repository}>
                     <FaGithub />
                   </a>
-                  <a href="/">
+                  <a href={data.demo}>
                     <FaExternalLinkAlt />
                   </a>
                 </section>

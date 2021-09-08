@@ -13,7 +13,7 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
 
-  animation: blink 500ms ease 9s forwards;
+  animation: blink 500ms ease 8s forwards;
 
   div {
     position: absolute;
@@ -31,20 +31,6 @@ export const Container = styled.div`
     animation:
       animate 6s linear 1s forwards,
       svgFadeOut 1s ease 8s forwards;
-  }
-
-
-  h1 {
-    position: relative;
-    width: max-content;
-    font-family: 'Signika', 'Poppins', sans-serif;
-    opacity: 0;
-    transform: translateY(0);
-    font-size: 6rem;
-    color: #00d8ff;
-    margin-bottom: 25px;
-
-    animation: FadeInFadeOut100 8s ease 1s forwards;
   }
 
   @keyframes fadeInUp {

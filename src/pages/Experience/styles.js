@@ -95,7 +95,7 @@ export const Content = styled.div`
         align-items: center;
         justify-content: space-between;
         color: var(--green);
-        font-size: 3rem;
+        font-size: 2.5rem;
         height: 30%;
 
         section {
@@ -107,6 +107,10 @@ export const Content = styled.div`
           a {
             text-decoration: none;
             color: var(--green);
+          }
+
+          a:nth-child(1) {
+            margin-right: 10px;
           }
         }
       }

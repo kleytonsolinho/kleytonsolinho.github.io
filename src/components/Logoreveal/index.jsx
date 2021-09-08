@@ -15,7 +15,6 @@ export default function Logoreveal() {
           </g>
         </svg>
       </div>
-      <h1>k</h1>
     </Container>
   );
 }
