@@ -45,6 +45,7 @@ export const Content = styled.div`
   width: 100%;
   max-width: 1268px;
   height: calc(100% - 100px);
+  margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
