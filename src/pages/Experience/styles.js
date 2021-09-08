@@ -5,7 +5,7 @@ import imgBg from '../../assets/global-digital.jpg';
 export const Container = styled.section`
   width: 100%;
   height: 100vh;
-  max-height: 800px;
+  max-height: 850px;
   background-image: url(${imgBg});
   background-repeat: no-repeat;
   background-size: cover;
@@ -86,7 +86,7 @@ export const Content = styled.div`
       box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.5);
 
       &:hover {
-        transform: translateY(-2px);
+        transform: translateY(-5px);
       }
 
       header {
