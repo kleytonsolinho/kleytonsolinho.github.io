@@ -1,4 +1,5 @@
 import { FaBars, FaFilePdf } from 'react-icons/fa';
+
 import {
   Nav,
   NavbarContainer,
@@ -18,7 +19,7 @@ export default function Navbar({ toggle }) {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/" scrollToTop={0}>
+          <NavLogo to="/" spy smoth>
             <img src={imgLogo} alt="" />
           </NavLogo>
           <MobileIcon onClick={toggle}>
@@ -26,35 +27,35 @@ export default function Navbar({ toggle }) {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="healthy">
+              <NavLinks to="about" spy smooth>
                 <span>.</span>
                 about
                 <span>( )</span>
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="blog">
+              <NavLinks to="work" spy smooth>
                 <span>.</span>
                 work
                 <span>( )</span>
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="blog">
+              <NavLinks to="experience" spy smooth>
                 <span>.</span>
                 experience
                 <span>( )</span>
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="join">
+              <NavLinks to="contact" spy smooth>
                 <span>.</span>
                 contact
                 <span>( )</span>
               </NavLinks>
             </NavItem>
             <NavBtn>
-              <NavBtnLinks to="/register">
+              <NavBtnLinks to="/resume">
                 <FaFilePdf className="icon" />
                 Resume
               </NavBtnLinks>
