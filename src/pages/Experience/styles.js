@@ -5,7 +5,7 @@ import imgBg from '../../assets/global-digital.jpg';
 export const Container = styled.section`
   width: 100%;
   height: 100vh;
-  max-height: 850px;
+  padding-top: 50px;
   background-image: url(${imgBg});
   background-repeat: no-repeat;
   background-size: cover;

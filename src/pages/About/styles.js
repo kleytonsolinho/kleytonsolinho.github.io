@@ -70,7 +70,6 @@ export const Container = styled.section`
 
       h1 {
         font-size: 5rem;
-        text-align: center;
         background-size: 150% 150%;
       }
 

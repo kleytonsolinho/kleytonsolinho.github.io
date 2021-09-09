@@ -14,13 +14,13 @@ import {
 import { Container, Button } from './styles';
 
 import dataWork from '../../data/DataWork';
-import imgApp from '../../assets/iphone.png';
+import imgApp from '../../assets/iphone-2.png';
 import imgWeb from '../../assets/ipad-pro-h.png';
 import imgFull from '../../assets/ipad-pro-iphone.png';
 
 export default function Work() {
   const switchImg = [
-    <img src={imgApp} alt="" className="img-h" />,
+    <img src={imgApp} alt="" className="img-w" />,
     <img src={imgWeb} alt="" className="img-w" />,
     <img src={imgFull} alt="" className="img-w" />,
   ];

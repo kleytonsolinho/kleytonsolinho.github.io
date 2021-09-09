@@ -21,7 +21,7 @@ export default function About() {
           <p>
             Me formando bacharel em Sistemas de Informação em 2022, também
             sou apaixonado por Economia, paixão essa que me fez fazer bacharel
-            em Ciências Economicas, o que me fez entender alguns conceitos
+            em Ciências Economicas, o que me fez entender alguns conceitos e
             movimentos da nova economia, como escala, CAC/LTV, Stock Options e
             Equity!
           </p>
