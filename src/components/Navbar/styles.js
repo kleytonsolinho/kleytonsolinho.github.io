@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
   background: rgba(10, 25, 47, 0.85);
@@ -95,7 +94,7 @@ export const NavMenu = styled.ul`
 export const NavItem = styled.li`
   height: 100px;
 `;
-export const NavLinks = styled(LinkS)`
+export const NavLinks = styled.a`
   color: var(--text-second);
   display: flex;
   align-items: center;
