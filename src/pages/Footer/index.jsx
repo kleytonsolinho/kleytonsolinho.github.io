@@ -5,7 +5,7 @@ export default function Footer() {
     <Container>
       <h1>Kleyton Solinho</h1>
       <p>
-        © 2021 All rights reserved - Designed e built by Kleyton Solinho.
+        © 2021 Designed e built by Kleyton Solinho.
       </p>
     </Container>
   );

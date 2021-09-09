@@ -24,6 +24,8 @@ export const Container = styled.section`
     height: 100%;
     max-height: 100vh;
     display: flex;
+    scroll-snap-align: center;
+    overflow-y: scroll;
 
     .container {
       width: 40%;

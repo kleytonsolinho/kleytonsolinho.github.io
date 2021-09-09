@@ -4,7 +4,7 @@ import imgContact from '../../assets/contact-pic.png';
 
 export default function Contact() {
   return (
-    <Container>
+    <Container id="contact">
       <div className="content">
         <h3>Need a developer?</h3>
         <a href="mailto:kleytonsolinho@gmail.com">

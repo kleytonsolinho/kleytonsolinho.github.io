@@ -5,7 +5,10 @@ export const Container = styled.section`
   max-width: 1268px;
   height: 100vh;
   max-height: 800px;
+  padding-top: 50px;
   margin: 0 auto;
+  scroll-snap-align: end;
+  //overflow-y: scroll;
 
   .perfil {
     position: relative;
@@ -60,18 +63,36 @@ export const Container = styled.section`
     align-items: center;
     justify-content: center;
     flex-direction: row;
-    color: #fff;
+    color: var(--text-second);
     position: relative;
 
-    h1 {
-      font-size: 5rem;
-      text-align: center;
-      background-size: 150% 150%;
+    article {
+
+      h1 {
+        font-size: 5rem;
+        text-align: center;
+        background-size: 150% 150%;
+      }
+
+      p {
+        font-size: 1.3rem;
+        padding: 10px 0;
+      }
+
+      section {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        font-size: 1.1rem;
+        padding-left: 20px;
+
+        ul {
+          list-style: circle;
+        }
+      }
     }
 
-    p {
-      font-size: 1.3rem;
-      padding: 10px 0;
-    }
   }
 `;

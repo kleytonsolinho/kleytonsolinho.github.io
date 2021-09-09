@@ -16,7 +16,7 @@ export default function Home() {
       <Navbar />
       <Leftbar />
       {/* <Rightbar /> */}
-      <Container>
+      <Container id="home">
         <div id="box1" />
         <div id="box2" className="text">
           <p className="stroke-invert">Mobile &amp;</p>

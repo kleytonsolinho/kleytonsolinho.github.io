@@ -19,7 +19,7 @@ export default function Navbar({ toggle }) {
     <>
       <Nav>
         <NavbarContainer>
-          <NavLogo to="/" spy smoth>
+          <NavLogo onClick={() => window.scrollTo({ top: 0 })}>
             <img src={imgLogo} alt="" />
           </NavLogo>
           <MobileIcon onClick={toggle}>
@@ -27,28 +27,28 @@ export default function Navbar({ toggle }) {
           </MobileIcon>
           <NavMenu>
             <NavItem>
-              <NavLinks to="about" spy smooth>
+              <NavLinks to="about">
                 <span>.</span>
                 about
                 <span>( )</span>
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="work" spy smooth>
+              <NavLinks to="work">
                 <span>.</span>
                 work
                 <span>( )</span>
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="experience" spy smooth>
+              <NavLinks to="experience">
                 <span>.</span>
                 experience
                 <span>( )</span>
               </NavLinks>
             </NavItem>
             <NavItem>
-              <NavLinks to="contact" spy smooth>
+              <NavLinks to="contact">
                 <span>.</span>
                 contact
                 <span>( )</span>

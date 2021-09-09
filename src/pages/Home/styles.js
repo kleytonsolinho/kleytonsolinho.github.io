@@ -6,9 +6,11 @@ import imgBanner2 from '../../assets/banner-2.png';
 export const Container = styled.section`
   width: calc(100% - 160px);
   max-width: 1268px;
-  height: calc(100vh - 100px);
+  height: 100vh;
   margin: 0 auto;
-  margin-top: 100px;
+  padding-top: 100px;
+  scroll-snap-align: center;
+  //overflow-y: scroll;
 
   #box1 {
     width: 530px;
@@ -39,7 +41,6 @@ export const Container = styled.section`
     line-height: 100%;
     position: relative;
     top: 15%;
-    left: 100px;
     overflow: hidden;
     z-index: -1;
 
@@ -47,8 +48,13 @@ export const Container = styled.section`
       background-size: 50% 50%;
     }
 
+    p:nth-child(2) {
+      margin-left: 50px;
+    }
+
     span {
       background-size: auto auto;
+      margin-left: 100px;
     }
   }
 
@@ -62,7 +68,6 @@ export const Container = styled.section`
     line-height: 100%;
     position: relative;
     top: 30%;
-    left: 100px;
     overflow: hidden;
     z-index: -1;
   }
@@ -138,7 +143,7 @@ export const Container = styled.section`
       left: -100%;
       opacity: 0;
     } to {
-      left: 10%;
+      left: 2%;
       opacity: 1;
     }
   }

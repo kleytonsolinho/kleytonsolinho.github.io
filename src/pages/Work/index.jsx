@@ -26,7 +26,7 @@ export default function Work() {
   ];
 
   return (
-    <Container>
+    <Container id="work">
       { dataWork.map((data, { id }) => (
         <section key={id} className={data.number % 2 === 0 ? 'right' : 'left'}>
           <div className="container" defaultValue={id}>
@@ -43,7 +43,7 @@ export default function Work() {
                   </Button>
                 </a>
                 <a href={data.demo} target="_blank" rel="noreferrer">
-                  { data.model === 1
+                  { data.model === 0
                     ? (
                       <Button>
                         <FaYoutube className="icon" />

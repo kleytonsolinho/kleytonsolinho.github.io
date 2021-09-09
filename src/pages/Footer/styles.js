@@ -9,6 +9,8 @@ export const Container = styled.footer`
   align-items: center;
   justify-content: space-between;
   color: var(--text-second);
+  scroll-snap-align: center;
+  //overflow-y: scroll;
 
   h1 {
     font-family: 'Arizonia', sans-serif;
