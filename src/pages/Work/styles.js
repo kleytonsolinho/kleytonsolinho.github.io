@@ -6,6 +6,41 @@ export const Container = styled.section`
   height: 100%;
   margin: 0 auto;
 
+  @media (max-width: 830px) {
+
+    section {
+      max-height: 100% !important;
+      flex-wrap: wrap-reverse !important;
+    }
+
+    section .right {
+      flex-wrap: wrap-reverse;
+    }
+
+    section .container {
+      width: 100% !important;
+      flex-wrap: wrap-reverse;
+      text-align: center;
+      margin-bottom: 100px;
+    }
+
+    section .container .content h1 {
+      text-align: center !important;
+    }
+
+    section .container .content div a {
+      flex-direction: column;
+    flex-wrap: wrap;
+    width: 100% !important;
+    }
+
+    section .banner {
+      width: 100% !important;
+      height: 50% !important;
+      flex-wrap: wrap;
+    }
+  }
+
   .right {
     flex-direction: row-reverse;
   }
@@ -24,8 +59,7 @@ export const Container = styled.section`
     height: 100%;
     max-height: 100vh;
     display: flex;
-    scroll-snap-align: center;
-    overflow-y: scroll;
+    scroll-snap-align: start;
 
     .container {
       width: 40%;
@@ -62,11 +96,13 @@ export const Container = styled.section`
         h2 {
           font-size: 1.5rem;
           padding: 10px 0;
+          color: var(--text-first);
         }
 
         p {
           font-size: 1.2rem;
           padding: 25px 0px;
+          color: var(--text-second);
         }
 
         div {

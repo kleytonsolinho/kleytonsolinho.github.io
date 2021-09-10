@@ -9,8 +9,44 @@ export const Container = styled.section`
   height: 100vh;
   margin: 0 auto;
   padding-top: 100px;
-  scroll-snap-align: center;
-  //overflow-y: scroll;
+  scroll-snap-align: start;
+
+  @media (max-width: 830px) {
+    width: 100%;
+    padding: 0 20px;
+
+    #home {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    #box1 {
+      width: 100% !important;
+      height: 100% !important;
+      opacity: 0.5;
+      position: absolute;
+      bottom: -10% !important;
+      left: 25% !important;
+      z-index: -1;
+      display: none;
+    }
+
+    #box2 {
+      z-index: 1;
+      text-align: center;
+      top: 25% !important;
+    }
+
+    #box2, p {
+      font-size: 4rem;
+      margin-left: 0 !important;
+    }
+
+    #box3 {
+      display: none;
+    }
+  }
 
   #box1 {
     width: 530px;
@@ -52,8 +88,8 @@ export const Container = styled.section`
       margin-left: 50px;
     }
 
-    span {
-      background-size: auto auto;
+    p:nth-child(3) {
+      background-size: 45% 45%;
       margin-left: 100px;
     }
   }

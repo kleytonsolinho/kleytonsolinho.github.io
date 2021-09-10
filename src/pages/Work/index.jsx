@@ -1,3 +1,5 @@
+// import { motion } from 'framer-motion';
+
 import {
   FaGithub,
   FaCode,
@@ -58,7 +60,7 @@ export default function Work() {
                     )}
                 </a>
               </div>
-              <h2>Tecnologias:</h2>
+              <h2>Tecnologias</h2>
               <div className="tecnology">
                 <div>
                   <SiReact className="tec-icon" />

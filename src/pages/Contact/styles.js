@@ -10,6 +10,17 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
 
+  @media (max-width: 830px) {
+    height: calc(100% - 100px) !important;
+    flex-wrap: wrap;
+    padding: 0 50px;
+
+    .content a h1 {
+      font-size: 5rem !important;
+      text-align: center;
+    }
+  }
+
   .content {
     text-align: center;
 

@@ -20,6 +20,10 @@ export const Nav = styled.nav`
 
   animation: FadeInNavbar 2s ease 3s forwards;
 
+  @media screen and (max-width: 830px) {
+    padding: 0 100px 0 20px;
+  }
+
   a {
     text-decoration: none;
   }
@@ -57,7 +61,7 @@ export const NavLogo = styled.a`
     left: 0;
     z-index: 10;
     width: 100%;
-    height: 120px;
+    height: 100%;
     cursor: pointer;
 
     &:hover {
@@ -66,16 +70,33 @@ export const NavLogo = styled.a`
   }
 `;
 
+export const MobileMenu = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: auto;
+  height: 100px;
+`;
+
+export const MobileBtn = styled.nav`
+  display: flex;
+  align-items: center;
+
+  @media screen and (min-width: 830px) {
+    display: none;
+  }
+`;
+
 export const MobileIcon = styled.div`
   display: none;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 830px) {
     display: block;
     position: absolute;
     top: 0;
     right: 0;
     transform: translate(-100%, 60%);
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     cursor: pointer;
     color: var(--text-first);
   }
@@ -88,7 +109,7 @@ export const NavMenu = styled.ul`
   text-align: center;
   margin-right: -22px;
 
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 830px) {
     display: none;
   }
 `;
@@ -128,10 +149,8 @@ export const NavLinks = styled(Link)`
 export const NavBtn = styled.nav`
   display: flex;
   align-items: center;
-  @media screen and (max-width: 768px) {
-    display: none;
-  }
 `;
+
 export const NavBtnLinks = styled.a`
   width: 100px;
   height: 45px;
@@ -147,6 +166,10 @@ export const NavBtnLinks = styled.a`
   font-weight: 300;
   font-size: 1.1rem;
   margin-left: 20px;
+
+  @media screen and (max-width: 350px) {
+    display: none;
+  }
 
   .icon {
     margin-right: 5px;

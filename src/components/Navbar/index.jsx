@@ -4,6 +4,8 @@ import {
   Nav,
   NavbarContainer,
   NavLogo,
+  MobileMenu,
+  MobileBtn,
   MobileIcon,
   NavMenu,
   NavItem,
@@ -22,9 +24,17 @@ export default function Navbar({ toggle }) {
           <NavLogo onClick={() => window.scrollTo({ top: 0 })}>
             <img src={imgLogo} alt="" />
           </NavLogo>
-          <MobileIcon onClick={toggle}>
-            <FaBars />
-          </MobileIcon>
+          <MobileMenu>
+            <MobileBtn>
+              <NavBtnLinks to="/resume">
+                <FaFilePdf className="icon" />
+                Resume
+              </NavBtnLinks>
+            </MobileBtn>
+            <MobileIcon onClick={toggle}>
+              <FaBars />
+            </MobileIcon>
+          </MobileMenu>
           <NavMenu>
             <NavItem>
               <NavLinks to="about">

@@ -56,6 +56,12 @@ export const Container = styled.div`
       blink 500ms steps(36) infinite;
   }
 
+  @media screen and (max-width: 768px) {
+    h1 {
+      font-size: 0.8rem;
+    }
+  }
+
   @keyframes typewriter {
     to {
       left: 100%;
@@ -105,6 +111,11 @@ export const Content = styled.div`
   box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.5);
 
   animation: FadeInFadeOut 4s ease 0.5s forwards;
+
+  @media screen and (max-width: 768px) {
+    width: 75%;
+    height: 200px;
+  }
 
   .termHeader {
     height: 34px;

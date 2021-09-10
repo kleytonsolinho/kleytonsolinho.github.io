@@ -1,3 +1,5 @@
+import { useMediaQuery } from 'react-responsive';
+
 import Navbar from '../../components/Navbar';
 import Leftbar from '../../components/Leftbar';
 // import Rightbar from '../../components/Rightbar';
@@ -11,17 +13,19 @@ import Footer from '../Footer';
 import { Container } from './styles';
 
 export default function Home() {
+  const isMobile = useMediaQuery({ query: '(max-width: 1200px)' });
+
   return (
     <>
       <Navbar />
-      <Leftbar />
+      { !isMobile && <Leftbar />}
       {/* <Rightbar /> */}
       <Container id="home">
         <div id="box1" />
         <div id="box2" className="text">
           <p className="stroke-invert">Mobile &amp;</p>
           <p className="stroke">Frontend</p>
-          <span className="stroke-invert">Developer</span>
+          <p className="stroke-invert">Developer</p>
         </div>
         <div id="box3" className="text wrapper">
           <div className="static-txt">I like stack </div>

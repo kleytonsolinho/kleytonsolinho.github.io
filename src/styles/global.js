@@ -33,6 +33,9 @@ export const GlobalStyles = createGlobalStyle`
   html {
     scroll-snap-type: y mandatory;
 
+    @media (max-width: 768px) {
+      font-size: 50%;
+    }
     @media (max-width: 1080px) {
       font-size: 93.75%;
     }

@@ -7,14 +7,34 @@ export const Container = styled.section`
   max-height: 800px;
   padding-top: 50px;
   margin: 0 auto;
-  scroll-snap-align: end;
-  //overflow-y: scroll;
+  scroll-snap-align: start;
+  display: flex;
+  align-items: center;
+
+  @media (max-width: 830px) {
+    height: 100% !important;
+    text-align: center;
+    flex-wrap: wrap;
+    max-height: 100%;
+
+    .perfil, .content {
+      width: 100% !important;
+    }
+
+    .perfil h1, .perfil h2, .perfil h3 {
+      font-size: 3rem !important;
+    }
+
+    .content article section {
+      width: 100% !important;
+      margin-bottom: 100px;
+    }
+  }
 
   .perfil {
     position: relative;
     width: 40%;
     height: 100%;
-    float: left;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -57,7 +77,6 @@ export const Container = styled.section`
   .content {
     width: 60%;
     height: 100%;
-    float: right;
     padding: 0 25px;
     display: flex;
     align-items: center;

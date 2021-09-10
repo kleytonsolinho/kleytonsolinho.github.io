@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import imgBg from '../../assets/global-digital.jpg';
+import imgBg from '../../assets/global-digital-2.jpg';
 
 export const Container = styled.section`
   width: 100%;
@@ -10,8 +10,11 @@ export const Container = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  scroll-snap-align: center;
-  overflow-y: scroll;
+  scroll-snap-align: start;
+
+  @media screen and (max-width: 782px) {
+    height: 200vh;
+  }
 
   img {
     height: 100%;
@@ -58,6 +61,10 @@ export const Content = styled.div`
     height: 10%;
     text-align: center;
 
+    @media screen and (max-width: 782px) {
+      height: 5%;
+    }
+
     h3 {
       font-size: 2rem;
     }
@@ -65,20 +72,14 @@ export const Content = styled.div`
 
   .container {
     width: 80%;
-    height: 80%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 25px 25px;
-    grid-auto-flow: row;
-    grid-template-areas:
-      ". . ."
-      ". . .";
     color: var(--text-first);
 
     div {
       background: rgba(10, 25, 47, 0.5);
-      backdrop-filter: blur(10px);
+      backdrop-filter: blur(4px);
       padding: 1.75rem;
       display: flex;
       flex-direction: column;
