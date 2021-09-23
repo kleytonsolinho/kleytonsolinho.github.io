@@ -42,6 +42,11 @@ export default function About() {
               <li>TypeScript</li>
               <li>Node.js</li>
             </ul>
+            <ul>
+              <li>Styled Components</li>
+              <li>Tailwind</li>
+              <li>Chakra UI / Material UI</li>
+            </ul>
           </section>
         </article>
       </div>
