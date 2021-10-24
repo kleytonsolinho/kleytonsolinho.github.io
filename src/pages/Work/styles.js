@@ -122,7 +122,7 @@ export const DevButtonContainer = styled.div`
 `;
 
 export const Button = styled.a`
-  width: 175px;
+  width: 200px;
   height: 45px;
   margin-left: 20px;
   margin-top: 25px;

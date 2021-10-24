@@ -4,7 +4,7 @@ import { Container } from './styles';
 
 export default function Banner() {
   return (
-    <Container id="home">
+    <Container id="banner">
       <div id="box1" />
       <div id="box2" className="text">
         <p className="stroke-invert">Mobile &amp;</p>

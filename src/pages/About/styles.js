@@ -92,7 +92,7 @@ export const PerfilContent = styled.article`
   position: relative;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   flex-direction: column;
 
@@ -111,7 +111,6 @@ export const PerfilContent = styled.article`
 
 export const ListContainer = styled.div`
   width: 100%;
-  height: 100%;
   padding-left: 20px;
 
   display: flex;

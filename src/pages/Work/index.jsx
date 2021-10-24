@@ -1,7 +1,7 @@
 import {
   FaGithub,
   FaCode,
-  FaYoutube,
+  // FaYoutube,
 } from 'react-icons/fa';
 
 import {
@@ -27,15 +27,17 @@ import {
 
 import dataWork from '../../data/DataWork';
 
-import imgApp from '../../assets/images/iphone-2.png';
-import imgWeb from '../../assets/images/ipad-pro-h.png';
-import imgFull from '../../assets/images/ipad-pro-iphone.png';
+import img01 from '../../assets/images/developer-01.png';
+import img02 from '../../assets/images/developer-02.png';
+import img03 from '../../assets/images/developer-03.png';
+import img04 from '../../assets/images/developer-04.png';
 
 export default function Work() {
   const switchImg = [
-    <img src={imgApp} alt="" />,
-    <img src={imgWeb} alt="" />,
-    <img src={imgFull} alt="" />,
+    <img src={img01} alt="" />,
+    <img src={img02} alt="" />,
+    <img src={img03} alt="" />,
+    <img src={img04} alt="" />,
   ];
 
   return (
@@ -52,15 +54,17 @@ export default function Work() {
                 <a href={data.github} target="_blank" rel="noreferrer">
                   <Button>
                     <FaGithub className="icon" />
-                    Github Coding
+                    Github Repository
                   </Button>
                 </a>
                 <a href={data.demo} target="_blank" rel="noreferrer">
                   { data.model === 0
                     ? (
                       <Button>
-                        <FaYoutube className="icon" />
-                        Video App
+                        <FaCode className="icon" />
+                        Live Demo
+                        {/* <FaYoutube className="icon" />
+                        Video App */}
                       </Button>
                     )
                     : (

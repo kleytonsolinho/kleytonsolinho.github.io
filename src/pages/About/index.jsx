@@ -46,7 +46,7 @@ export default function About() {
           <ListTecnology>
             <li>Styled Components</li>
             <li>Chakra UI / Material UI</li>
-            <li>Tailwind</li>
+            <li>Sass</li>
           </ListTecnology>
         </ListContainer>
       </PerfilContent>
