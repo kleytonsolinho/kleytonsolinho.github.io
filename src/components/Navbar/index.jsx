@@ -14,7 +14,7 @@ import {
   NavBtnLinks,
 } from './styles';
 
-import imgLogo from '../../assets/logo.png';
+import imgLogo from '../../assets/images/logo.png';
 
 export default function Navbar({ toggle }) {
   return (

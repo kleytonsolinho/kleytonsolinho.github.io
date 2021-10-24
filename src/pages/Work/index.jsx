@@ -1,5 +1,3 @@
-// import { motion } from 'framer-motion';
-
 import {
   FaGithub,
   FaCode,
@@ -13,31 +11,44 @@ import {
   SiNodeDotJs,
 } from 'react-icons/si';
 
-import { Container, Button } from './styles';
+import {
+  Container,
+  Developer,
+  DevContainer,
+  DevContent,
+  DevTitle,
+  DevSubTitle,
+  DevDescription,
+  DevButtonContainer,
+  Button,
+  DevTecnologyContainer,
+  DevBanner,
+} from './styles';
 
 import dataWork from '../../data/DataWork';
-import imgApp from '../../assets/iphone-2.png';
-import imgWeb from '../../assets/ipad-pro-h.png';
-import imgFull from '../../assets/ipad-pro-iphone.png';
+
+import imgApp from '../../assets/images/iphone-2.png';
+import imgWeb from '../../assets/images/ipad-pro-h.png';
+import imgFull from '../../assets/images/ipad-pro-iphone.png';
 
 export default function Work() {
   const switchImg = [
-    <img src={imgApp} alt="" className="img-w" />,
-    <img src={imgWeb} alt="" className="img-w" />,
-    <img src={imgFull} alt="" className="img-w" />,
+    <img src={imgApp} alt="" />,
+    <img src={imgWeb} alt="" />,
+    <img src={imgFull} alt="" />,
   ];
 
   return (
     <Container id="work">
-      { dataWork.map((data, { id }) => (
-        <section key={id} className={data.number % 2 === 0 ? 'right' : 'left'}>
-          <div className="container" defaultValue={id}>
+      { dataWork.map((data) => (
+        <Developer key={data.id} side={data.number}>
+          <DevContainer defaultValue={data.id}>
             <h3>{data.number}</h3>
-            <div className="content">
-              <h1 className="stroke-invert">{data.title}</h1>
-              <h2>{data.tecnology}</h2>
-              <p>{data.description}</p>
-              <div>
+            <DevContent>
+              <DevTitle className="stroke-invert">{data.title}</DevTitle>
+              <DevSubTitle>{data.tecnology}</DevSubTitle>
+              <DevDescription>{data.description}</DevDescription>
+              <DevButtonContainer>
                 <a href={data.github} target="_blank" rel="noreferrer">
                   <Button>
                     <FaGithub className="icon" />
@@ -59,32 +70,32 @@ export default function Work() {
                       </Button>
                     )}
                 </a>
-              </div>
-              <h2>Tecnologias</h2>
-              <div className="tecnology">
+              </DevButtonContainer>
+              <DevSubTitle>Tecnologias</DevSubTitle>
+              <DevTecnologyContainer>
                 <div>
-                  <SiReact className="tec-icon" />
+                  <SiReact className="tecIcon" />
                   <span>React JS</span>
                 </div>
                 <div>
-                  <SiTypescript className="tec-icon" />
+                  <SiTypescript className="tecIcon" />
                   <span>TypeScript</span>
                 </div>
                 <div>
-                  <SiStyledComponents className="tec-icon" />
+                  <SiStyledComponents className="tecIcon" />
                   <span>Styled Components</span>
                 </div>
                 <div>
-                  <SiNodeDotJs className="tec-icon" />
+                  <SiNodeDotJs className="tecIcon" />
                   <span>Node JS</span>
                 </div>
-              </div>
-            </div>
-          </div>
-          <div className="banner">
+              </DevTecnologyContainer>
+            </DevContent>
+          </DevContainer>
+          <DevBanner>
             {switchImg[data.model]}
-          </div>
-        </section>
+          </DevBanner>
+        </Developer>
       ))}
     </Container>
   );

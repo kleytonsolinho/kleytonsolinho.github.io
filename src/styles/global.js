@@ -1,14 +1,14 @@
 import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyles = createGlobalStyle`
-:root {
+  :root {
     --background: #0b1930;
     --green: #00ff98;
     --text-first: #ffffff;
     --text-second: #8892b0;
   }
 
-* {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -17,18 +17,18 @@ export const GlobalStyles = createGlobalStyle`
     scrollbar-color: var(--green);
   }
 
-*::-webkit-scrollbar {
-  width: 5px;
-}
+  *::-webkit-scrollbar {
+    width: 5px;
+  }
 
-*::-webkit-scrollbar-track {
-  background: var(--background);
-}
+  *::-webkit-scrollbar-track {
+    background: var(--background);
+  }
 
-*::-webkit-scrollbar-thumb {
-  background-color: var(--green);
-  border-radius: 20px;
-}
+  *::-webkit-scrollbar-thumb {
+    background-color: var(--green);
+    border-radius: 20px;
+  }
 
   html {
     scroll-snap-type: y mandatory;
@@ -73,36 +73,36 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   .stroke {
-      background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
-      background-size: 100% 100%;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
-      -webkit-text-stroke: 5px transparent;
-      color: var(--background);
+    background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
+    background-size: 100% 100%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-stroke: 5px transparent;
+    color: var(--background);
 
-      &:hover {
-        -webkit-text-stroke: 0px transparent;
-        color: transparent;
-      }
-    }
-
-    .stroke-invert {
-      background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
-      background-size: 200% 200%;
-      background-clip: text;
-      -webkit-background-clip: text;
-      -moz-background-clip: text;
+    &:hover {
       -webkit-text-stroke: 0px transparent;
       color: transparent;
-
-      &:hover {
-        -webkit-text-stroke: 5px transparent;
-        color: var(--background);
-      }
     }
+  }
 
-    @keyframes FadeInFadeOut {
+  .stroke-invert {
+    background: linear-gradient(-45deg, #eeaa52, #e73c6f, #2394d5, #2af3b7);
+    background-size: 200% 200%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-stroke: 0px transparent;
+    color: transparent;
+
+    &:hover {
+      -webkit-text-stroke: 5px transparent;
+      color: var(--background);
+    }
+  }
+
+  @keyframes FadeInFadeOut {
     0% {
       opacity: 0;
       transform: translateY(3rem);

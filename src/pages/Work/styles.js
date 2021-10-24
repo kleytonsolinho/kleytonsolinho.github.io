@@ -7,7 +7,6 @@ export const Container = styled.section`
   margin: 0 auto;
 
   @media (max-width: 830px) {
-
     section {
       max-height: 100% !important;
       flex-wrap: wrap-reverse !important;
@@ -30,8 +29,8 @@ export const Container = styled.section`
 
     section .container .content div a {
       flex-direction: column;
-    flex-wrap: wrap;
-    width: 100% !important;
+      flex-wrap: wrap;
+      width: 100% !important;
     }
 
     section .banner {
@@ -41,145 +40,107 @@ export const Container = styled.section`
     }
   }
 
-  .right {
-    flex-direction: row-reverse;
-  }
-
-  .left {
-    flex-direction: row;
-  }
-
   .margin-r {
-    margin-right: 50px;
     width: 100%;
+    margin-right: 50px;
+  }
+`;
+
+export const Developer = styled.div`
+  width: 100%;
+  height: 100%;
+  max-height: 100vh;
+
+  display: flex;
+  scroll-snap-align: start;
+
+  flex-direction: ${(props) => (props.side % 2 === 0 ? 'row-reverse' : 'row')};
+`;
+
+export const DevContainer = styled.div`
+  width: 40%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  color: var(--text-first);
+
+  h3 {
+    width: 100%;
+    height: 100px;
+
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: -1;
+
+    font-size: 15rem;
+    line-height: 100px;
+    color: var(--text-second);
+    opacity: 0.05;
+  }
+`;
+
+export const DevContent = styled.div`
+  width: 100%;
+  height: 500px;
+`;
+
+export const DevTitle = styled.h1`
+  font-size: 4.5rem;
+  text-align: left;
+  background-size: auto auto;
+`;
+
+export const DevSubTitle = styled.h2`
+  font-size: 1.5rem;
+  padding: 10px 0;
+  color: var(--text-first);
+`;
+
+export const DevDescription = styled.p`
+  font-size: 1.2rem;
+  padding: 25px 0px;
+  color: var(--text-second);
+`;
+
+export const DevButtonContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  a {
+    text-decoration: none;
   }
 
-  section {
-    width: 100%;
-    height: 100%;
-    max-height: 100vh;
-    display: flex;
-    scroll-snap-align: start;
-
-    .container {
-      width: 40%;
-      height: 100vh;
-      color: var(--text-first);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-
-      h3 {
-        font-size: 15rem;
-        position: relative;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100px;
-        line-height: 100px;
-        z-index: -1;
-        color: var(--text-second);
-        opacity: 0.05;
-      }
-
-      .content {
-        width: 100%;
-        height: 500px;
-
-        h1 {
-          font-size: 4.5rem;
-          text-align: left;
-          background-size: auto auto;
-        }
-
-        h2 {
-          font-size: 1.5rem;
-          padding: 10px 0;
-          color: var(--text-first);
-        }
-
-        p {
-          font-size: 1.2rem;
-          padding: 25px 0px;
-          color: var(--text-second);
-        }
-
-        div {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-
-          a {
-            text-decoration: none;
-          }
-        }
-
-        button {
-          margin: 0 10px;
-        }
-
-      }
-
-      .tecnology {
-        width: 100%;
-        height: 100px;
-
-        div {
-          width: 25%;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
-          flex-direction: column;
-        }
-
-        .tec-icon {
-          font-size: 3rem;
-        }
-
-        span {
-          padding-top: 10px;
-        }
-      }
-    }
-
-    .banner {
-      width: 60%;
-      height: 100vh;
-      display:flex;
-      align-items: center;
-      justify-content: center;
-
-      .img-h {
-        height: 95%;
-      }
-
-      .img-w {
-        width: 95%;
-      }
-    }
+  button {
+    margin: 0 10px;
   }
 `;
 
 export const Button = styled.a`
   width: 175px;
   height: 45px;
-  color: var(--green);
-  background-color: transparent;
-  border: 1px solid var(--green);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border-radius: 5px;
-  text-decoration: none;
-  font-family: 'Poppins' sans-serif;
-  font-weight: 300;
-  font-size: 1.1rem;
   margin-left: 20px;
   margin-top: 25px;
   margin-bottom: 25px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: transparent;
+
+  border: 1px solid var(--green);
+  border-radius: 5px;
+  font-family: "Poppins" sans-serif;
+  font-size: 1.1rem;
+  font-weight: 300;
+  text-decoration: none;
+  color: var(--green);
 
   .icon {
     margin-right: 5px;
@@ -187,9 +148,49 @@ export const Button = styled.a`
 
   &:hover {
     text-decoration: none;
-    background: rgba(80,250,123,0.3);
+    background: rgba(80, 250, 123, 0.3);
     font-weight: bold;
     cursor: pointer;
     color: var(--text-first);
+  }
+`;
+
+export const DevTecnologyContainer = styled.div`
+  width: 100%;
+  height: 100px;
+
+  display: flex;
+
+  div {
+    width: 25%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  .tecIcon {
+    font-size: 3rem;
+  }
+
+  span {
+    padding-top: 10px;
+  }
+`;
+
+export const DevBanner = styled.div`
+  width: 60%;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 95%;
   }
 `;

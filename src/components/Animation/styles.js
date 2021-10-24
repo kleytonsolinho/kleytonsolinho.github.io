@@ -1,14 +1,17 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  width: 100%;
+  min-height: 100vh;
+
   position: absolute;
   top: 0;
   left: 0;
   z-index: -1;
-  width: 100%;
-  min-height: 100vh;
+
   background: var(--background);
   color: #fff;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -24,9 +27,10 @@ export const Container = styled.div`
   }
 
   h1 {
-    position: relative;
     width: max-content;
-    font-family: 'Poppins', sans-serif;
+    position: relative;
+
+    font-family: "Poppins", sans-serif;
     opacity: 1;
     transform: translateY(0);
 
@@ -35,7 +39,7 @@ export const Container = styled.div`
 
   h1::before,
   h1::after {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     right: 0;
@@ -51,8 +55,7 @@ export const Container = styled.div`
   h1::after {
     width: 0.125em;
     background: white;
-    animation:
-      typewriter 2s steps(36) 1s forwards,
+    animation: typewriter 2s steps(36) 1s forwards,
       blink 500ms steps(36) infinite;
   }
 
@@ -79,16 +82,20 @@ export const Container = styled.div`
     0% {
       opacity: 0;
       transform: translateY(3rem);
-    } 25% {
+    }
+    25% {
       opacity: 1;
       transform: translateY(0rem);
-    } 50% {
+    }
+    50% {
       opacity: 1;
       transform: translateY(0rem);
-    } 75% {
+    }
+    75% {
       opacity: 1;
       transform: translateY(0rem);
-    } 100% {
+    }
+    100% {
       opacity: 0;
       transform: translateY(3rem);
     }
@@ -97,18 +104,22 @@ export const Container = styled.div`
 export const Content = styled.div`
   width: 600px;
   height: 300px;
+  position: absolute;
+  z-index: -1;
+
   background: var(--background);
   opacity: 0;
+
   border: #000;
-  position: absolute;
-  align-items: center;
-  justify-content: center;
   border-radius: 5px;
   border: 1px solid #333;
-  z-index: -1;
+
+  align-items: center;
+  justify-content: center;
+
   transform: translateY(0);
-  -webkit-box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.5);
-  box-shadow: 0px 0px 50px 10px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 0px 50px 10px rgba(0, 0, 0, 0.5);
 
   animation: FadeInFadeOut 4s ease 0.5s forwards;
 
@@ -116,38 +127,39 @@ export const Content = styled.div`
     width: 75%;
     height: 200px;
   }
+`;
 
-  .termHeader {
-    height: 34px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
+export const TerminalHeader = styled.div`
+  height: 34px;
 
-  .termHeader .icon {
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  .icon {
     border-radius: 50%;
     display: inline-block;
     width: 12px;
     height: 12px;
   }
 
-  .termHeader .icon:first-of-type {
+  .icon:first-of-type {
     background: #ff5f56;
     margin-left: 12px;
   }
 
-  .termHeader .icon:nth-of-type(2) {
+  .icon:nth-of-type(2) {
     background: #ffbd2e;
     margin-left: 12px;
   }
 
-  .termHeader .icon:nth-of-type(3) {
+  .icon:nth-of-type(3) {
     background: #27c93f;
     margin-left: 12px;
   }
+`;
 
-  .termBody {
-    padding: 12px 14px;
-    flex: 1 1;
-  }
+export const TerminalContainer = styled.div`
+  padding: 12px 14px;
+  flex: 1 1;
 `;

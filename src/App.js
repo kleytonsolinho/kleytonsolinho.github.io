@@ -7,7 +7,7 @@ import Home from './pages/Home';
 
 import { GlobalStyles } from './styles/global';
 
-function App() {
+export default function App() {
   const [visible, setVisible] = useState(false);
 
   setTimeout(() => {
@@ -17,11 +17,9 @@ function App() {
   return (
     <>
       <GlobalStyles />
-      { !visible && <Animation /> }
-      { !visible && <Logoreveal /> }
-      { visible && <Home /> }
+      {!visible && <Animation />}
+      {!visible && <Logoreveal />}
+      {visible && <Home />}
     </>
   );
 }
-
-export default App;

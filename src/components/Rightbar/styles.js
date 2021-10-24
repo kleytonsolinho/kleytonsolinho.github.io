@@ -1,51 +1,51 @@
 import styled from 'styled-components';
 
-export const Container = styled.div`
+export const Container = styled.aside`
+  width: 40px;
+  height: 100vh;
+
   position: fixed;
   bottom: 0;
   right: -120px;
   left: auto;
-  width: 40px;
-  height: 100vh;
+
   display: flex;
   align-items: center;
-  justify-content: center;
-  flex-direction: column;
 
-  animation: FadeInRightbar 2s ease 12s forwards;
-
-  a {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 300;
-    color: var(--text-second);
-    text-decoration: none;
-
-    &:hover {
-      color: var(--green);
-    }
-  }
-
-  div {
-    display: flex;
-    transform: rotate(90deg);
-  }
-
-  .icon {
-    writing-mode: vertical-rl;
-    text-orientation: mixed;
-    font-size: 1.2rem;
-    color: var(--text-second);
-    margin-bottom: 15px;
-  }
+  animation: FadeInRightbar 2s ease 5s forwards;
 
   @keyframes FadeInRightbar {
     from {
       right: -120px;
-    } to {
-      right: 40px;
+    }
+    to {
+      right: 20px;
+    }
+  }
+`;
+
+export const IconList = styled.div``;
+
+export const Icon = styled.div`
+  width: 100%;
+  margin-bottom: 20px;
+
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+
+  .icone {
+    cursor: pointer;
+    color: #8892b0;
+    font-size: 1.8rem;
+    position: relative;
+
+    &:hover {
+      color: #fff;
+      top: -2px;
     }
   }
 `;

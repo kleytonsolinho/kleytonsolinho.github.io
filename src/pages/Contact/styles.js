@@ -6,6 +6,7 @@ export const Container = styled.section`
   height: calc(100vh - 200px);
   margin: 0 auto;
   padding-top: 50px;
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -20,26 +21,26 @@ export const Container = styled.section`
       text-align: center;
     }
   }
+`;
 
-  .content {
-    text-align: center;
+export const Content = styled.div`
+  text-align: center;
+
+  a {
+    text-decoration: none;
 
     h1 {
       font-size: 7rem;
       text-transform: capitalize;
     }
-
-    h3 {
-      font-size: 2rem;
-      margin-bottom: 45px;
-    }
-
-    a {
-      text-decoration: none;
-    }
-
-    img {
-      width: 25%;
-    }
   }
+
+  img {
+    width: 25%;
+  }
+`;
+
+export const Title = styled.h3`
+  font-size: 2rem;
+  margin-bottom: 45px;
 `;

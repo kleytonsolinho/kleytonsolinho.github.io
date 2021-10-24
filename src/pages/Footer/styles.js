@@ -5,10 +5,13 @@ export const Container = styled.footer`
   max-width: 1268px;
   height: 100px;
   margin: 0 auto;
+
   display: flex;
   align-items: center;
   justify-content: space-between;
+
   color: var(--text-second);
+
   scroll-snap-align: start;
 
   @media (max-width: 830px) {
@@ -18,7 +21,7 @@ export const Container = styled.footer`
   }
 
   h1 {
-    font-family: 'Arizonia', sans-serif;
+    font-family: "Arizonia", sans-serif;
     font-size: 1.5rem;
     color: var(--text-second);
 
@@ -28,7 +31,7 @@ export const Container = styled.footer`
   }
 
   p {
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 0.8rem;
   }
 `;
